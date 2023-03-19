@@ -1,0 +1,218 @@
+header {
+    background: black;
+    height: 100px;
+}
+.header-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.logo {
+
+    width: 270px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+.menu {
+    width: 930px;
+    color: aliceblue;
+
+    /*list-style: none;*/
+}
+.topmenu ul {
+    justify-content: space-around;
+    padding-left: 0;
+    width: 60%;
+}
+.topmenu ul, .mainmenu ul {
+    display: flex;
+    list-style: none;
+}
+.mainmenu ul li{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.mainmenu ul li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #561d7b;
+}
+/*chon phan tu cuoi cua li*/
+.mainmenu ul li:last-child::before{
+    background: none;
+}
+
+.banner {
+    width: 100%;
+    height:360px;
+    position: relative;
+}
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*làm cho hình không bị méo*/
+}
+/*.banner .banner-footer {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    background-image: url(../images/banner-footer.png);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 100% 100%;*/
+/*    background-position: center;*/
+/*    filter: drop-shadow(0 -10px 8px #000000);*/
+/*    z-index: 9;*/
+/*}*/
+/*.banner .banner-header {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    background-image: url(../images/banner-header.png);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 100% 100%;*/
+/*    background-position: center;*/
+/*    filter: drop-shadow(0 -10px 8px #000000);*/
+/*    z-index: 3;*/
+/*}*/
+.main-content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 30px;
+}
+.thumb {
+   width: 30%;
+    position: relative;
+}
+
+.thumb img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+}
+.jackpot{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;/*phần tử con lớn hơn cha , auto xuông hàng*/
+}
+.item{
+    padding: 15px;
+}
+.jackpot .item .name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    background: #561d7b;
+    padding: 10px 0;
+    color: white
+}
+
+ .jackpot .item .item-img  img{
+    vertical-align: middle;
+ }
+ .ranking {
+    width: 20%;
+ }
+ .ranking .player-list ul {
+     padding-left: 0;
+ }
+ .ranking .title  {
+     border-radius: 3px;
+     display: flex;
+     gap: 3px; /*khoangr cachs giua of flex*/
+     color: white;
+     padding: 15px;
+     justify-content: left;
+     align-items: center;
+     background-color: #561d7b;
+
+ }
+ .ranking .player-list ul li {
+     padding: 5px;
+     /*margin: 0 0 5px;*/
+     display: flex;
+     height: 40px;
+     background-color: #561d7b;
+     margin-bottom: 5px;
+     border-radius: 2px;
+ }
+.ranking .player-list ul li .hinhanh{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+}
+ .player-list {
+     height: 400px;
+     overflow-y: auto;
+     color: #eeeeee;
+ }
+
+.ranking .player-list ul li img {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+
+}
+.player-list ul li .info span{
+    display: block;
+    font-size: 12px;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+.ranking .player-list ul li .info span:nth-child(2){
+    color: rgba(160, 160, 160, 0.88);
+    font-size: 12px;
+    display: block;
+    white-space: nowrap;
+}
+.ranking .player-list ul li .info span:nth-child(1) {
+
+    font-size: 15px;
+}
+.ranking .player-list ul li .reward {
+    font-size: 14px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#fff18a, #d99300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-content::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    background-image: url(../images/6873289.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -1;
+}
